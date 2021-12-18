@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Bootstrap 3</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1>Formularios con Bootstrap 3</h1>
+    </header>
+    <main class="container">
+        <section>
+            <br>
+            <h2>Formulario básico</h2>
+            <form action="" class="">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre:">
+                </div>
+
+                <div class="form-group">
+                    <label for="option">Elije una opción</label>
+                    <select class="form-control" name="" id="option">
+                        <option value="">Opción #1</option>
+                        <option value="">Opción #2</option>
+                        <option value="">Opción #3</option>
+                        <option value="">Opción #4</option>
+                        <option value="">Opción #5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="archivo">Archivo:</label>
+                    <input type="file" id="archivo">
+                    <p class="help-block">Máximo 50MB</p>
+                </div>
+
+                <button class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <br>
+            <h2>Formularios en l&iacute;nea</h2>
+            <div class="container">
+                <br>
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="nombre">Nombre:</label>
+                        <input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="sr-only" for="correo">Correo:</label>
+                            <div class="input-group-addon">@</div>
+                            <input class="form-control" id="" type="text" placeholder="Correo:">
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="" id=""> Recuerdame
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <br>
+        </section>
+        <section>
+            <h2>Formulario Horizontal</h2>
+            <div class="container">
+                <br>
+                <form action="" class="form-horizontal">
+                    <div class="form-group has-success">
+                        <label for="nombre" class="control-label col-md-2">Nombre:</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre:">
+                        </div>
+                    </div>
+                    <div class="form-group has-warning">
+                        <label for="nombre" class="control-label col-md-2">Nombre:</label>
+                        <div class="col-md-10">
+                            <p class="form-control-static">Carlos Arturo</p>
+                        </div>
+                    </div>
+                    <div class="form-group has-error">
+                        <label for="correo" class="control-label col-md-2">Correo:</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="correo" placeholder="Correo:">
+                        </div>
+                    </div>
+                    <div class="form-group has-success">
+                        <div class="checkbox col-md-2 col-md-offset-2">
+                            <label>
+                                <input type="checkbox"> Recuerdame
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2 col-md-offset-2">
+                            <button class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <h2>Otro Formulario</h2>
+            <div class="container">
+                <form action="">
+                    <div class="form-group">
+                        <label>Label basica</label>
+                        <input type="text" class="form-control" placeholder="Input Basico">
+                    </div>
+
+                    <textarea name="" id="" class="form-control" placeholder="textarea"></textarea>
+
+                    <div class="form-group">
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" name="" id="" disabled> Checkbox #1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="" id=""> Checkbox #2</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="" id=""> Checkbox #3</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="" id=""> Checkbox #4
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="" id=""> Checkbox #5
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="" id=""> Checkbox #6
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label for="radio1">
+                                <input type="radio" name="opcion" id="radio1">Radio Button #1
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="radio2">
+                                <input type="radio" name="opcion" id="radio2">Radio Button #2
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="radio3">
+                                <input type="radio" name="opcion" id="radio3">Radio Button #3
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="container">
+            <h5>
+                <a href="https://www.youtube.com/watch?v=-9NXJtE1bzI&list=PLhSj3UTs2_yWTKvu1Aq3xUhzIJNBZ3MFW&index=6" target="blank">Video tutorial</a>
+                <span>por Carlos Arturo Esparza <em>en FalconMasters<em></span>
+            </h5>
+        </section>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
